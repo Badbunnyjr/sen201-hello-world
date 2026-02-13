@@ -1,3 +1,9 @@
+# Student Management System (SMS)
+# Name: Egwuchukwu Chibuke
+# Matric Number: 23/12877
+# Course: SEN201
+# Level: 300
+
 # List to store student records
 students = []
 
@@ -14,8 +20,12 @@ def add_student(name, matric_number, course, level):
 # Function to view all students
 def view_students():
     for student in students:
-        print(student)
+        print("Name:", student["name"])
+        print("Matric Number:", student["matric_number"])
+        print("Course:", student["course"])
+        print("Level:", student["level"])
+        print("---------------------------")
 
-# Example usage
-add_student("John Doe", "SEN201001", "Computer Science", "200")
+# Example usage (Your details)
+add_student("Egwuchukwu Chibuke", "23/12877", "SEN201", "300")
 view_students()
